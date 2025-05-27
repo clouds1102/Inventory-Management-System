@@ -1,58 +1,79 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>库存管理系统 | Inventory Management System</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-blue-600 text-white py-6 shadow-md">
-    <div class="max-w-5xl mx-auto px-4">
-      <h1 class="text-3xl font-bold">📦 库存管理系统</h1>
-      <p class="text-lg">Inventory Management System · Python + SQL Server</p>
-    </div>
-  </header>
+# 📦 库存管理系统 Inventory Management System
 
-  <main class="max-w-5xl mx-auto px-4 py-10">
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">项目简介 · Introduction</h2>
-      <p class="mb-2">该系统为一个基于 Python 和 SQL Server 开发的库存管理系统，具备 GUI 界面，适用于中小企业日常库存管理。</p>
-      <p>This project is a Python + SQL Server-based Inventory Management System with a GUI, designed for small to medium businesses.</p>
-    </section>
+![screenshot](assets/demo.png)
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">主要功能 · Features</h2>
-      <ul class="list-disc pl-6 space-y-1">
-        <li>🔐 用户登录 / User Authentication</li>
-        <li>📦 商品管理（新增 / 编辑 / 删除 / 搜索）</li>
-        <li>🚚 出入库记录 / Inbound & Outbound Records</li>
-        <li>🚨 库存预警 / Inventory Alerts</li>
-        <li>📊 月结报表导出 / Monthly Report Export (Excel)</li>
-        <li>💾 自动备份 / Scheduled Auto Backup</li>
-      </ul>
-    </section>
+> 一个适用于中小企业的图形化库存管理系统，基于 Python 与 SQL Server 开发，支持出入库管理、库存预警、报表导出等功能。
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">技术栈 · Tech Stack</h2>
-      <div class="grid grid-cols-2 gap-4">
-        <div><strong>语言 / Language</strong>: Python</div>
-        <div><strong>数据库连接 / Connection</strong>: pyodbc</div>
-        <div><strong>数据库 / Database</strong>: SQL Server</div>
-        <div><strong>界面 / GUI</strong>: customtkinter</div>
-        <div><strong>导出 / Export</strong>: openpyxl</div>
-      </div>
-    </section>
+A GUI-based inventory system for small to medium-sized enterprises, built with Python and SQL Server. Features include inbound/outbound management, alerts, and Excel report export.
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">作者信息 · About Me</h2>
-      <p>🎓 数据科学与大数据技术专业 / Major in Data Science and Big Data Technology</p>
-      <p>🔍 兴趣方向：人工智能、数据分析、金融科技</p>
-    </section>
+---
 
-    <footer class="text-center text-sm text-gray-500 border-t pt-6">
-      © 2025 Your Name. All rights reserved. | GitHub: <a href="https://github.com/clouds1102" class="text-blue-600">@clouds1102</a>
-    </footer>
-  </main>
-</body>
-</html>
+## 🚀 快速开始 Quick Start
+
+```bash
+# 克隆项目 Clone the repo
+git clone https://github.com/你的用户名/Inventory-Management-System.git
+cd Inventory-Management-System
+
+# 安装依赖 Install dependencies
+pip install -r requirements.txt
+
+# 运行 Run the app
+python main.py
+```
+
+---
+
+## 🔧 技术栈 Tech Stack
+
+| 技术 | 描述 |
+|------|------|
+| Python | 主体开发语言 Main development language |
+| pyodbc | 数据库连接方式 Database connection |
+| SQL Server | 后端数据库 Backend database |
+| customtkinter | GUI 框架 Graphical interface library |
+| openpyxl | Excel 报表导出 Exporting Excel reports |
+| CTkTable / ttk.Treeview | 表格展示 Table view |
+
+---
+
+## ✨ 功能 Features
+
+- 🔐 用户登录 / User Authentication
+- ➕ 商品新增 / Add Products
+- ✏️ 商品编辑 / Edit Products
+- ❌ 商品删除 / Delete Products
+- 🔍 商品搜索 / Search
+- 🚚 出入库记录 / Inbound & Outbound Tracking
+- 🚨 库存预警 / Stock Alerts
+- 📊 月结报表 / Monthly Summary (Excel 导出)
+- 💾 自动备份 / Auto Backup Support
+
+---
+
+## 📁 项目结构 Project Structure
+
+```
+├── main.py                  # 主程序入口 Main app
+├── login.py                 # 登录模块 Login module
+├── product_management.py    # 商品管理模块 Product management
+├── report_module.py         # 月结报表模块 Monthly report
+├── database_config.py       # 数据库连接配置 DB connection config
+├── assets/                  # 截图与资源 Screenshots & assets
+├── backup_job_config.md     # SQL Server 自动备份设置说明
+├── README.md                # 项目说明 Project readme
+```
+
+---
+
+## 🙋‍♀️ 作者 Author
+
+- 🎓 专业 Major：数据科学与大数据技术 / Data Science & Big Data Technology  
+- 🎯 方向 Focus：人工智能、数据分析、金融科技 / AI & Data & FinTech  
+- 🌐 GitHub: [clouds1102](https://github.com/clouds1102)
+
+---
+
+## 📌 声明 Disclaimer
+
+本项目用于学习展示，欢迎交流与建议。This project is for learning and demo purposes. Contributions and suggestions are welcome!
