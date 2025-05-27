@@ -70,7 +70,7 @@ python main.py
 
 - 🎓 专业 Major：数据科学与大数据技术 / Data Science & Big Data Technology  
 - 🎯 方向 Focus：人工智能、数据分析、金融科技 / AI & Data & FinTech  
-- 🌐 GitHub: [clouds1102](https://github.com/clouds1102)
+- 🌐 GitHub: [https://github.com/clouds1102](https://github.com/clouds1102/clouds1102.github.io)
 
 ---
 
